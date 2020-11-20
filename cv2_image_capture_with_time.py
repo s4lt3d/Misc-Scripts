@@ -22,6 +22,8 @@ while time.time() - start_time < 30:
 
 s, img_end = cam.read()
 
+cam.release()
+
 cv2.imshow('start', img_start)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
@@ -29,3 +31,4 @@ cv2.destroyAllWindows()
 cv2.imshow('end', img_end)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
